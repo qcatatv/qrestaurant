@@ -1,5 +1,6 @@
 import React from "react";
 import { Mail, MapPin, Phone, Clock } from "lucide-react";
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -7,10 +8,11 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Interior Restaurant"
-            className="w-full h-full object-cover brightness-50"
+            fill
+            className="object-cover brightness-50"
           />
         </div>
         <div className="relative z-10 text-center text-white px-4">

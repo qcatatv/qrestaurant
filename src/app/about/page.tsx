@@ -1,17 +1,17 @@
 import React from "react";
-import { ChefHat, Heart, Users } from "lucide-react"; // Iconițe pentru a sublinia valorile
+import { ChefHat, Heart, Users } from "lucide-react";
+import Image from "next/image";
 
 export default function About() {
-  // Componenta ValueCard a fost eliminată
-
   return (
     <main className="min-h-screen">
       <section className="relative h-[50vh] flex items-center justify-center">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1702885967362-c3aaed15f41d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Interior Restaurant"
-            className="w-full h-full object-cover brightness-[.55]"
+            fill
+            className="object-cover brightness-[.55]"
           />
         </div>
         <div className="relative z-10 text-center text-white px-4">
@@ -56,10 +56,11 @@ export default function About() {
             </div>
 
             <div className="relative h-[450px] order-1 lg:order-2">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Bucătar preparând mâncare"
-                className="w-full h-full object-cover rounded-xl shadow-2xl"
+                fill
+                className="object-cover rounded-xl shadow-2xl"
               />
             </div>
           </div>
@@ -119,10 +120,12 @@ export default function About() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Membru 1 */}
             <div className="space-y-4">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1659354218430-ac7f0b31e977?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Portret Bucătar Șef"
-                className="w-full h-auto rounded-full object-cover mx-auto aspect-square border-4 border-gray-100 shadow-md"
+                width={300}
+                height={300}
+                className="rounded-full object-cover mx-auto aspect-square border-4 border-gray-100 shadow-md"
               />
               <p className="text-xl font-bold">Chef Andrei Popescu</p>
               <p className="text-sm text-gray-500">Bucătar Șef Executiv</p>
@@ -130,10 +133,12 @@ export default function About() {
 
             {/* Membru 2 */}
             <div className="space-y-4">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1654922207993-2952fec328ae?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Portret Manager"
-                className="w-full h-auto rounded-full object-cover mx-auto aspect-square border-4 border-gray-100 shadow-md"
+                width={300}
+                height={300}
+                className=" rounded-full object-cover mx-auto aspect-square border-4 border-gray-100 shadow-md"
               />
               <p className="text-xl font-bold">Cristina Ionescu</p>
               <p className="text-sm text-gray-500">Manager General</p>
@@ -141,10 +146,12 @@ export default function About() {
 
             {/* Membru 3 */}
             <div className="space-y-4">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Portret Somelier"
-                className="w-full h-auto rounded-full object-cover mx-auto aspect-square border-4 border-gray-100 shadow-md"
+                width={300}
+                height={300}
+                className="rounded-full object-cover mx-auto aspect-square border-4 border-gray-100 shadow-md"
               />
               <p className="text-xl font-bold">Mihai Vasile</p>
               <p className="text-sm text-gray-500">Somelier Senior</p>
@@ -152,10 +159,12 @@ export default function About() {
 
             {/* Membru 4 */}
             <div className="space-y-4">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1697898109582-40f15c65f174?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Portret Patiser"
-                className="w-full h-auto rounded-full object-cover mx-auto aspect-square border-4 border-gray-100 shadow-md"
+                width={300}
+                height={300}
+                className="rounded-full object-cover mx-auto aspect-square border-4 border-gray-100 shadow-md"
               />
               <p className="text-xl font-bold">Elena Georgescu</p>
               <p className="text-sm text-gray-500">Chef Patiser</p>
