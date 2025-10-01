@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,12 +21,13 @@ export default function Home() {
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
             O experiență culinară unică într-un ambient modern și elegant
           </p>
-          <button
+          <Link
+            href="/reservations"
             className="bg-white text-black px-8 py-3 rounded-full text-lg font-semibold 
-                           hover:bg-opacity-90 transition duration-300"
+                           hover:bg-[#191919] hover:text-white transition duration-300"
           >
             Rezervă o masă
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -256,7 +258,7 @@ export default function Home() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-black text-white px-6 py-3 rounded-full 
+                  className="w-full bg-black text-white px-6 py-3 cursor-pointer rounded-full 
                            hover:bg-gray-800 transition duration-300"
                 >
                   Trimite Mesajul

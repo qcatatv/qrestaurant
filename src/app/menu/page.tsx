@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const menuItems = {
   appetizers: [
@@ -158,9 +159,11 @@ export default function MenuPage() {
             <p>
               Pentru rezervări și comenzi speciale, vă rugăm să ne contactați
             </p>
-            <button className="mt-6 bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition duration-300">
-              Rezervă o masă
-            </button>
+            <a href="/reservations" className="inline-block">
+              <button className="mt-6 bg-[#191919] cursor-pointer hover:outline-black hover:outline-1 text-white px-8 py-3 rounded-full hover:bg-white hover:text-black  transition duration-300">
+                Rezervă o masă
+              </button>
+            </a>
           </div>
         </div>
       </section>

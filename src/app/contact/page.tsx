@@ -5,7 +5,6 @@ import Image from "next/image";
 export default function Contact() {
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
@@ -26,7 +25,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Detalii, Program și Formular */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -43,7 +41,6 @@ export default function Contact() {
                   </span>
                 </div>
 
-                {/* Contact Item - Telefon */}
                 <div className="flex items-start">
                   <Phone className="w-6 h-6 text-black mr-4 flex-shrink-0" />
                   <span className="text-gray-700 text-lg">
@@ -82,7 +79,6 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Formular de Contact */}
             <div className="lg:col-span-2 bg-gray-50 p-8 rounded-lg shadow-xl">
               <h2 className="text-4xl font-bold mb-8">Trimite-ne un mesaj</h2>
               <form className="space-y-6">

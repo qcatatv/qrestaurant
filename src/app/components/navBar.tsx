@@ -33,7 +33,7 @@ export default function NavBar() {
 
   const buttonClasses = isScrolled
     ? "bg-black text-white hover:bg-gray-800"
-    : "bg-white text-black hover:bg-opacity-90";
+    : "bg-white text-black hover:bg-[#191919] hover:text-white";
 
   return (
     <nav
@@ -46,7 +46,7 @@ export default function NavBar() {
           <Link href="/" className={`text-2xl font-bold ${logoColor}`}>
             qRestaurant
           </Link>
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center font-semibold space-x-8">
             <Link
               href="/about"
               className={`hover:opacity-75 transition-opacity ${textColor}`}
@@ -65,9 +65,9 @@ export default function NavBar() {
             >
               Contact
             </Link>
-            <Link href="/rezervari" passHref>
+            <Link href="/reservations" passHref>
               <button
-                className={`px-6 py-2 rounded-full transition-all ${buttonClasses}`}
+                className={`cursor-pointer px-6 py-2 rounded-full transition-all ${buttonClasses}`}
               >
                 Rezervă o masă
               </button>

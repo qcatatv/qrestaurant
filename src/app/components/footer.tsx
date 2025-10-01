@@ -3,12 +3,10 @@ import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react"; // Am a
 import Link from "next/link";
 
 export default function Footer() {
-
   return (
     <footer className="bg-black text-white pt-16 pb-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-gray-800 pb-10">
-
           <div className="lg:col-span-1">
             <h3 className="text-4xl font-extrabold mb-4 tracking-wider text-white">
               qRestaurant
@@ -41,22 +39,34 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                <Link
+                  href="/"
+                  className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+                >
                   Acasă
                 </Link>
               </li>
               <li>
-                <Link href="/despre" className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                <Link
+                  href="/"
+                  className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+                >
                   Despre Noi
                 </Link>
               </li>
               <li>
-                <Link href="/meniu" className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                <Link
+                  href="/"
+                  className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+                >
                   Meniu & Galerie
                 </Link>
               </li>
               <li>
-                <Link href="/rezervari" className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                <Link
+                  href="/"
+                  className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+                >
                   Rezervări
                 </Link>
               </li>
@@ -69,22 +79,34 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/evenimente" className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                <Link
+                  href="/"
+                  className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+                >
                   Evenimente Private
                 </Link>
               </li>
               <li>
-                <Link href="/cariere" className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                <Link
+                  href="/"
+                  className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+                >
                   Cariere
                 </Link>
               </li>
               <li>
-                <Link href="/termene" className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                <Link
+                  href="/"
+                  className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+                >
                   Termene și Condiții
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                <Link
+                  href="/"
+                  className="text-gray-400 hover:text-white transition duration-300 relative inline-block after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+                >
                   FAQ
                 </Link>
               </li>
@@ -103,7 +125,7 @@ export default function Footer() {
                   Strada Exemplu nr. 123, Sector 1, București
                 </span>
               </div>
-              
+
               <a
                 href="tel:+40123456789"
                 className="flex items-center hover:text-white transition duration-300"
@@ -111,7 +133,7 @@ export default function Footer() {
                 <Phone className="w-5 h-5 mr-3 flex-shrink-0 text-white" />
                 +40 123 456 789 (Rezervări)
               </a>
-              
+
               <a
                 href="mailto:contact@qrestaurant.ro"
                 className="flex items-center hover:text-white transition duration-300"
